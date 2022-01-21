@@ -25,8 +25,10 @@ INSERT INTO vet_specialties VALUES (3, 3);
 INSERT INTO vet_specialties VALUES (4, 2);
 INSERT INTO vet_specialties VALUES (5, 1);
 
-INSERT INTO types VALUES (1, 'cat');
-INSERT INTO types VALUES (2, 'dog');
+INSERT INTO care_types VALUES (1,2), (1,1);
+
+INSERT INTO types VALUES (1, 'cat',1);
+INSERT INTO types VALUES (2, 'dog',1);
 INSERT INTO types VALUES (3, 'lizard');
 INSERT INTO types VALUES (4, 'snake');
 INSERT INTO types VALUES (5, 'bird');
@@ -62,3 +64,7 @@ INSERT INTO visits(id,pet_id,visit_date,description) VALUES (2, 8, '2013-01-02',
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (4, 7, '2013-01-04', 'spayed');
 
+INSERT INTO cares(id,name,description) VALUES
+    (1,'Hair Brushing ', 'We will brush the hair of your pet'),
+    (2,'Chemical flea removal', "We will apply strong chemical products in the hair of your pet to remove any kind 
+of flea or insect present.");
